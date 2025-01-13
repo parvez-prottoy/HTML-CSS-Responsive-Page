@@ -36,13 +36,15 @@ img {
   width: 100%;
   height: auto;
 }
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 /* ---------------------- default style end ---------------------- */
 /* ---------------------- header section start ---------------------- */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 7.5rem;
   background: var(--heroBg);
   font-size: var(--textFs);
   color: var(--primaryColor);
@@ -51,10 +53,11 @@ header {
   top: 0;
   z-index: 100;
 }
-header > * {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5rem;
 }
 .navItems ul {
   display: flex;
@@ -87,3 +90,99 @@ header > * {
   color: #fff;
 }
 /* ---------------------- header section end ---------------------- */
+/* ---------------------- banner section start ---------------------- */
+.banner {
+  background: var(--heroBg);
+}
+.banner-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 7.5rem);
+}
+.sub-heading {
+  font-size: var(--subHeadingFs);
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: var(--secondaryColor);
+}
+.heading {
+  font-size: var(--headingFs);
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: var(--primaryColor);
+}
+.text {
+  font-size: var(--textFs);
+  font-weight: 400;
+  color: var(--secondaryTextColor);
+}
+.banner-content > p.sub-heading {
+  margin-bottom: 1.7rem;
+}
+.banner-content > h1.heading {
+  margin-bottom: 2.4rem;
+  width: 68%;
+}
+.banner-content > p.text {
+  margin-bottom: 4rem;
+  width: 60%;
+}
+.btn {
+  padding: 1.7rem 3.8rem;
+  background: var(--primaryColor);
+  color: #fff;
+  font-size: var(--textFs);
+  font-weight: 600;
+  border-radius: 1.5rem;
+  transition: background 0.2s ease;
+}
+.btn:hover {
+  background: var(--secondaryColor);
+}
+.banner-buttons {
+  display: flex;
+  gap: 2.4rem;
+}
+.banner-buttons .btn:last-child {
+  background: transparent;
+  color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+}
+.banner-image {
+  width: 70%;
+}
+.banner-students {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 5.2rem;
+}
+.students-area {
+  display: flex;
+  position: relative;
+  margin-left: 1.8rem;
+}
+.students-area img,
+.students-area span {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: -1.8rem;
+}
+.students-area span {
+  background: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--textFs);
+  font-weight: 600;
+  color: #fff;
+}
+.banner-students > p {
+  font-size: var(--textFs);
+  color: var(--primaryTextColor);
+  font-weight: 600;
+}
+/* ---------------------- banner section end ---------------------- */
