@@ -27,8 +27,63 @@
 html {
   font-size: 62.5%;
 }
-
 body {
   font-family: "Open Sans", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 /* ---------------------- default style end ---------------------- */
+/* ---------------------- header section start ---------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5rem;
+  background: var(--heroBg);
+  font-size: var(--textFs);
+  color: var(--primaryColor);
+  font-weight: 600;
+  position: static;
+  top: 0;
+  z-index: 100;
+}
+header > * {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.navItems ul {
+  display: flex;
+  gap: 3.6rem;
+}
+.navItems ul li a {
+  color: var(--primaryColor);
+  transition: all 0.2s ease;
+}
+.navItems ul li a:hover,
+.navButtons a:hover {
+  color: var(--secondaryColor);
+}
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+}
+.navButtons a {
+  color: var(--primaryColor);
+}
+.navButtons a:last-child {
+  padding: 1rem 3.3rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+}
+.navButtons a:last-child:hover {
+  background: var(--primaryColor);
+  color: #fff;
+}
+/* ---------------------- header section end ---------------------- */
