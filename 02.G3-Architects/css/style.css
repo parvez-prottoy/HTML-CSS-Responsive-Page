@@ -1,0 +1,19 @@
+/* ---------------------- header section start ---------------------- */
+header {
+  background: var(--bgHero);
+}
+header > .container {
+  height: 7.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: var(--infoText);
+  font-weight: 500;
+  gap: 4.4rem;
+}
+/* ---------------------- header section end ---------------------- */

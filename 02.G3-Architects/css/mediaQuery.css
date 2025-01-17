@@ -1,0 +1,18 @@
+/* ---------------------- mobile view start ---------------------- */
+@media screen and (max-width: 425px) {
+}
+/* ---------------------- mobile view end ---------------------- */
+/* ---------------------- table view start ---------------------- */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  header > .container {
+    justify-content: center;
+  }
+}
+/* ---------------------- table view end ---------------------- */
+/* ---------------------- laptop view start ---------------------- */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+/* ---------------------- laptop view end ---------------------- */
